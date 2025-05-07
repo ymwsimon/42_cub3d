@@ -6,24 +6,24 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:48:23 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/07 22:03:49 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/07 22:33:24 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/cub3d.h"
 
-static t_lineinfo	calculate_dda_line(t_vars *vars, t_dda *dda)
-{
-	t_lineinfo	res;
-	int			hit;
+// static t_lineinfo	calculate_dda_line(t_vars *vars, t_dda *dda)
+// {
+// 	t_lineinfo	res;
+// 	int			hit;
 
-	hit = 0;
-	while (!hit)
-	{
+// 	hit = 0;
+// 	while (!hit)
+// 	{
 
-	}
-	return (res);
-}
+// 	}
+// 	return (res);
+// }
 
 static t_lineinfo	calculate_by_dda(t_vars *vars, t_vec raydir)
 {
@@ -64,7 +64,7 @@ t_lineinfo	get_line_info_by_dda(int i, t_vars *vars)
 	dda.ray_dir.y = vecset.dir.y + k * vecset.plane.y;
 	dda.sign.x = raydir.x / fabs(raydir.x);
 	dda.sign.y = raydir.y / fabs(raydir.y);
-
+	(void)dda;
 	line_info = calculate_by_dda(vars, raydir);
 	return (line_info);
 }
