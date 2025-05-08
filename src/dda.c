@@ -6,24 +6,29 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 14:48:23 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/07 22:33:24 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/08 00:30:14 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/cub3d.h"
 
-// static t_lineinfo	calculate_dda_line(t_vars *vars, t_dda *dda)
-// {
-// 	t_lineinfo	res;
-// 	int			hit;
+static int	already_hit(t_vars *vars, t_dda *dda)
+{
+	
+}
 
-// 	hit = 0;
-// 	while (!hit)
-// 	{
+static t_lineinfo	calculate_dda_line(t_vars *vars, t_dda *dda)
+{
+	t_lineinfo	res;
+	int			hit;
 
-// 	}
-// 	return (res);
-// }
+	hit = NO;
+	while (!hit)
+	{
+
+	}
+	return (res);
+}
 
 static t_lineinfo	calculate_by_dda(t_vars *vars, t_vec raydir)
 {

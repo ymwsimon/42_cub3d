@@ -6,7 +6,7 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:55:33 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/07 21:44:22 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/08 11:15:34 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,8 @@ typedef struct s_dda
 {
 	t_vec		ray_dir;
 	t_vec		sign;
-	t_vec		distance_to_wall;
+	t_vec		travelled_distance;
+	t_vec		step_size;
 	t_cardinal	hit_dir;
 	int			line_height;
 }	t_dda;
