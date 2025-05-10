@@ -6,7 +6,7 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 15:30:23 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/08 15:24:24 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/09 23:13:08 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ t_distinfo	get_dist_info_x(t_vars *vars, t_vecset vecset, t_vec raydir, t_grid s
 		if (vars->map[firstwall_grid.y][firstwall_grid.x] == '1')
 		{
 			distance_to_wall_x = get_line_to_point_distance((vecset.plane.y / vecset.plane.x), vecset.pos, firstwall_pos);
+			printf("getdx--fwx:%f fwy:%f\n", firstwall_pos.x, firstwall_pos.y);
 			break ;
 		}
 		firstwall_pos.x += 1 * sign.x;
@@ -105,6 +106,7 @@ t_distinfo	get_dist_info_y(t_vars *vars, t_vecset vecset, t_vec raydir, t_grid s
 		if (vars->map[firstwall_grid.y][firstwall_grid.x] == '1')
 		{
 			distance_to_wall_y = get_line_to_point_distance((vecset.plane.y / vecset.plane.x), vecset.pos, firstwall_pos);
+			printf("getdy--fwx:%f fwy:%f\n", firstwall_pos.x, firstwall_pos.y);
 			break ;
 		}
 		firstwall_pos.y += 1 * sign.y;

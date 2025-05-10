@@ -6,7 +6,7 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 13:55:33 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/08 22:26:52 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/09 18:19:56 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,17 +45,6 @@
 # define OK 			0
 
 # define EPSILON		0.000001
-
-/* this section will be removed later */
-
-# define MAP_H 6
-# define MAP_W 6
-# define PATH_TO_IMAGE_N "./assets/n.xpm"
-# define PATH_TO_IMAGE_S "./assets/s.xpm"
-# define PATH_TO_IMAGE_E "./assets/e.xpm"
-# define PATH_TO_IMAGE_W "./assets/w.xpm"
-
-/* ********************************** */
 
 typedef struct s_grid
 {

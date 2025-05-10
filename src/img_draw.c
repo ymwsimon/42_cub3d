@@ -6,7 +6,7 @@
 /*   By: mayeung <mayeung@student.42london.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 15:59:36 by yublee            #+#    #+#             */
-/*   Updated: 2025/05/07 22:32:42 by mayeung          ###   ########.fr       */
+/*   Updated: 2025/05/10 17:18:30 by mayeung          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ void	draw_image(t_vars *vars)
 	while (i < WINDOW_WIDTH)
 	{
 		line_info = get_line_info_by_dda(i, vars);
-		printf("h:%i, dg:%f, dw:%f\n", line_info.line_height, line_info.distance_info.distance_to_grid, line_info.distance_info.distance_to_wall);
+		// printf("h:%i, dg:%f, dw:%f\n", line_info.line_height, line_info.distance_info.distance_to_grid, line_info.distance_info.distance_to_wall);
 		draw_line(i, vars, line_info);
 		i++;
 	}
